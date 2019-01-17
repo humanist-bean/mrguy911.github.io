@@ -2,71 +2,102 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Affordable and professional web design">
-    <meta name="keywords" content="web design, affordable web design, professional web design">
-    <meta name="author" content="Alder French">
-    <title>Geek on a bike | Welcome</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sebio Properties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css">
   </head>
+  <style type="text/css" media="screen">
+    .has-bg-img { background: url('./img/background.jpg')center center; background-size:cover; }
+  </style>
+
   <body>
-    <header>
+    <section class="hero is-fullheight has-bg-img">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <header class="navbar">
       <div class="container">
-        <div id="branding">
-          <h1><span class="highlight">Geek</span> on a bike</h1>
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <h1 class="title is-3 has-text-black">Sebio Properties</h1>
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </div>
-        <nav>
-          <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-          </ul>
-         </nav>
-
-
+        <div id="navbarMenuHeroC" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active">
+              Home
+            </a>
+            <a class="navbar-item has-text-black">
+              Properties
+            </a>
+            <a class="navbar-item has-text-black">
+              About
+            </a>
+            <span class="navbar-item">
+              <a class="button is-success is-inverted">
+                <span>Contact</span>
+              </a>
+            </span>
+          </div>
+        </div>
       </div>
     </header>
+  </div>
 
-    <section id="showcase">
-      <div class="container">
-      <h1>The $100 Website</h1>
-      <p>No monthly fees. No yearly subscription. No nonsense.</p>
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-left">
+
     </div>
-    </section>
+  </div>
 
-
-    <section id="newsletter">
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+    <nav class="tabs is-boxed is-fullwidth">
       <div class="container">
-        <h1>Curious? Get in touch.      </h1>
-        <a href="tel:+1-505-204-0976"> +1 (505)-204-0976</a>
-        <a href="mailto:geekonabike2018@gmail.com"> Geekonabike2018@gmail.com </a>
-      </div>
-    </section>
-
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="./img/logo_brush.png">
-          <h3><a href="services.html">Website Design</a></h3>
-          <p>Running $100 special for website. You get one just like this, hosting included. </p>
-        </div>
-        <div class="box">
-          <img src="./img/gob_logo.png">
-          <h3><a href="services.html">Tech Support</a></h3>
-          <p>Having technical difficulties? Don't stress, a geek will be right there!</p>
-        </div>
-        <div class="box">
-          <img src="./img/media_logos.png">
-          <h3><a href="services.html">SEO and SMM</a></h3>
-          <p>Ensure a strong internet presence for your website and social media profiles. </p>
-        </div>
 
       </div>
+    </nav>
+  </div>
+</section>
 
-    </section>
 
-          <footer>
-            <p>Geek on a bike, Copyright &copy; 2018</p>
-          </footer>
+
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
+  });
+    </script>
+
   </body>
+
 </html>
