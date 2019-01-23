@@ -1,91 +1,138 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sebio Properties | About</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
 
-        <!-- Headings -->
-        <div class="inline-block">
-          <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <a href="index.html" class="navbar-item is-size-3">
-                Sebio Properties
-              </a>
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-            <div class="navbar-menu" id="navMenu">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sebio Properties | About</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
 
-              <div class="navbar-start">
-                <a href="./properties.html" class="navbar-item title is-2">
-                  Properties
-                </a>
-              </div>
+<body>
 
-              <div class="navbar-"></div>
+  <!-- Headings -->
+  <div class="inline-block">
+    <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="index.html" class="navbar-item is-size-3">
+          <img src="./img/logoone.png" alt="" width="72" height="48" />
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-menu" id="navMenu">
 
-              <div class="navbar-end">
-                <a href="./index.html" class="navbar-item">
-                  Home
-                </a>
-                <a href="./properties.html" class="navbar-item">
-                  Properties
-                </a>
-                <a href="./contact.html" class="navbar-item">
-                  <button class="button is-primary">Contact</button>
-                </a>
-              </div>
-            </div>
-          </nav>
+        <div class="navbar-start">
+          <a href="./properties.html" class="navbar-item title is-2">
+            Properties
+          </a>
         </div>
-        <!-- About Body -->
-        <div class="inline-block">
-          <section class="hero is-light is-fullheight">
-            <div class="hero-body">
-              <div class="container">
-                <h1 class="title">
 
-                </h1>
-              </div>
-            </div>
-          </section>
+        <div class="navbar-"></div>
+
+        <div class="navbar-end">
+          <a href="./index.html" class="navbar-item">
+            Home
+          </a>
+          <a href="./about.html" class="navbar-item">
+            About
+          </a>
+          <a href="./contact.html" class="navbar-item">
+            <button class="button is-primary">Contact</button>
+          </a>
         </div>
-        <script type="text/javascript">
-          document.addEventListener('DOMContentLoaded', () => {
+      </div>
+    </nav>
+  </div>
+  <!-- Properties Body -->
+  <div style="margin-top:100px"></div>
+  <div class="inline-block">
+    <section class="hero is-light ">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sit, nesciunt ducimus atque assumenda nisi impedit! Molestias sit voluptas, dolore nobis rerum illo obcaecati necessitatibus ipsa ea, voluptates adipisci consequatur!
+          </h2>
+        </div>
+      </div>
+    </section>
+  </div>
 
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  <!-- TILES -->
+  <div class="notification has-background-light">
+    <!-- First Post - Good template for each item -->
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title">Ozamiz City <br> 2 Bedroom Apt</p>
+          <p class="subtitle">Price: $600 a month</p>
+          <figure class="image is-4by3">
+            <img src="./img/propertytwo.jpg">
+          </figure>
+          <br>
+          <a href="./items/propertyone.html" class="button is-rounded is-fullwidth">Read More</a>
+        </article>
+      </div>
 
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title">Mother - Daughter Organic Cloth <br> Pad Kit</p>
+          <p class="subtitle">Price: $200</p>
+          <figure class="image is-4by3">
+            <img src="./img/padsone.jpg">
+          </figure>
+          <br>
+          <a href="./shopitems/motherdaughter.html" class="button is-rounded is-fullwidth">Read More</a>
+        </article>
+      </div>
+    </div>
 
-          // Add a click event on each of them
-          $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
+  </div>
+  </div>
 
-              // Get the target from the "data-target" attribute
-              const target = el.dataset.target;
-              const $target = document.getElementById(target);
 
-              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-              el.classList.toggle('is-active');
-              $target.classList.toggle('is-active');
 
-            });
+
+  <footer class="footer has-background-dark">
+    <div class="content has-text-centered">
+      <p>
+        <strong class="has-text-white">Sebio Properties, &copy; 2019</strong>
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
           });
-        }
+        });
+      }
 
-      });
-        </script>
+    });
+  </script>
 
-    <script type="text/javascript" src="lib/main.js"></script>
-  </body>
+  <script type="text/javascript" src="lib/main.js"></script>
+</body>
+
 </html>
