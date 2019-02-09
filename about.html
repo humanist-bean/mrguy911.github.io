@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sebio Properties | About</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+        <!-- Headings -->
+        <div class="inline-block">
+          <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a href="index.html" class="navbar-item is-size-3">
+                <img src="./img/logotwo.png" alt="" width="72" height="48"/>
+              </a>
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+            <div class="navbar-menu" id="navMenu">
+
+              <div class="navbar-start">
+                <a href="./about.html" class="navbar-item title is-2">
+                  About
+                </a>
+              </div>
+
+              <div class="navbar-"></div>
+
+              <div class="navbar-end">
+                <a href="./index.html" class="navbar-item">
+                  Home
+                </a>
+                <a href="./properties.html" class="navbar-item">
+                  Properties
+                </a>
+                <a href="./contact.html" class="navbar-item">
+                  <button class="button is-primary">Contact</button>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- About Body -->
+        <div class="inline-block">
+          <section class="hero is-light is-fullheight">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title">
+                  About
+                </h1>
+                <h2 class="subtitle">
+                  <br>
+                  Founded in 2018 Sebio Properties is a property management company that specializes in leasing and management of commercial properties and commercial areas for property owners. Bringing in an understanding of the local area as well as research, Sebio properties can find the right fit for both Lessors and Lessees that ensures a profitable relationship.
+                  <br>
+                  <br>
+                  <a class="button is-primary is-large" href="./contact.html">
+                    Contact
+                  </a>
+                </h2>
+              </div>
+            </div>
+          </section>
+        </div>
+        <footer class="footer has-background-dark">
+          <div class="content has-text-centered">
+            <p>
+              <strong class="has-text-white">Sebio Properties, &copy; 2019</strong>
+            </p>
+          </div>
+        </footer>
+        <script type="text/javascript">
+          document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+          // Add a click event on each of them
+          $navbarBurgers.forEach( el => {
+            el.addEventListener('click', () => {
+
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+
+            });
+          });
+        }
+
+      });
+        </script>
+
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>
