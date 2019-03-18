@@ -6,41 +6,37 @@
 // Just uncomment the following block to see the result.
 
 @import "../node_modules/bulma/sass/utilities/initial-variables";
-$red: #DA0203;
-$yellow: #FFCA1B;
-$maroon: #800000;
+$ocean: #54AFCF;
+$sky: #81DCFD;
+$primary: $ocean;
+$danger: $sky;
+//modify colors here
+@import "../node_modules/bulma/sass/utilities/_all";
 
-$primary: $red;
-$warning: $yellow;
-$danger: $maroon;
-
-@import "../node_modules/bulma/sass/utilities/all";
-
-
-@import "../node_modules/bulma/sass/layout/hero";
-.hero-foo{
-  @extend .hero;
-  background-image:url(../img/semi.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.hero-about{
-  @extend .hero;
-  background:url(../img/group.jpg) no-repeat 0 -150px;
-  background-size:cover;
-}
-
+//Add cool box for portfolio sites
 @import "../node_modules/bulma/sass/elements/box";
 .box-cool{
-  @extend .box;
+    @extend .box;
+
 }
 
 .box-cool:hover{
-  opacity:0.5;
+    opacity: .5;
 }
 
+//Resize navbar
+@import "../node_modules/bulma/sass/components/navbar";
+$navbar-height: 4rem;
+$navbar-item-img-max-height: 4rem;
 
-
+//Add Hero Classes for Hero Customizations
+@import "../node_modules/bulma/sass/layout/_all";
+.hero-foo{
+  @extend .hero ;
+  background-image: url('../img/floppy.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 /*
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
