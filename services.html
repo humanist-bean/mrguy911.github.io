@@ -75,10 +75,10 @@
           <div class="accordion-body">
             <div class="accordion-content">
               Tell us what you need it to do and we will build you a customized computer designed just for you. Whether its just a basic computer for email or a fully loaded state of the art gaming computer we do it all.
-<br>
-Every computer we build comes with a standard 1 year warranty. Some systems have components that are covered for as long as you own the computer system.
-<br>
-All computers come with either the original OS CD/DVD OR a customized restore disk.
+              <br>
+              Every computer we build comes with a standard 1 year warranty. Some systems have components that are covered for as long as you own the computer system.
+              <br>
+              All computers come with either the original OS CD/DVD OR a customized restore disk.
             </div>
           </div>
         </article>
@@ -96,11 +96,12 @@ All computers come with either the original OS CD/DVD OR a customized restore di
             <div class="accordion-content">
               We offer many upgrade options for both computers and printers. <br>
 
-Computers:<br>
-If you have your computer just the way you want it but you need it to be faster but don't want the hassle of setting up a new computer just the way you like it or just don't have the money or just want to add some features like cd/dvd burning or make it wireless, an upgrade is the route for you. Upgrades can speed up a computer  and extend it useful life to you for years to come
-<br>
-Printers:<br>
-If you print a lot of documents, the printer takes a long time to print or you print a lot of graphics, upgrading the printer (not replacing it) can speed up printing speed.
+              Computers:<br>
+              If you have your computer just the way you want it but you need it to be faster but don't want the hassle of setting up a new computer just the way you like it or just don't have the money or just want to add some features like cd/dvd
+              burning or make it wireless, an upgrade is the route for you. Upgrades can speed up a computer and extend it useful life to you for years to come
+              <br>
+              Printers:<br>
+              If you print a lot of documents, the printer takes a long time to print or you print a lot of graphics, upgrading the printer (not replacing it) can speed up printing speed.
             </div>
           </div>
         </article>
@@ -116,7 +117,7 @@ If you print a lot of documents, the printer takes a long time to print or you p
           </div>
           <div class="accordion-body">
             <div class="accordion-content">
-              Have a network? On the Internet? Then you need to secure your computer from the threats on the Internet. We can secure your computer from theft,  viruses, on lookers and more using both software and hardware solutions.
+              Have a network? On the Internet? Then you need to secure your computer from the threats on the Internet. We can secure your computer from theft, viruses, on lookers and more using both software and hardware solutions.
             </div>
           </div>
         </article>
@@ -148,7 +149,7 @@ If you print a lot of documents, the printer takes a long time to print or you p
           </div>
           <div class="accordion-body">
             <div class="accordion-content">
-Not sure whats wrong? Let us help you, we will find out what is wrong with your computer and let you know how to fix it, or if you want us to fix it, give you a quote for our services.            </div>
+              Not sure whats wrong? Let us help you, we will find out what is wrong with your computer and let you know how to fix it, or if you want us to fix it, give you a quote for our services. </div>
           </div>
         </article>
 
@@ -163,8 +164,9 @@ Not sure whats wrong? Let us help you, we will find out what is wrong with your 
           </div>
           <div class="accordion-body">
             <div class="accordion-content">
-              Need to protect children from the harmful parts of the Internet or do you just need to know what's safe to do on the Internet and when? We can set up your computers and network to block harmful sites for kids and what to look for when entering sensitive information and more.
-          </div>
+              Need to protect children from the harmful parts of the Internet or do you just need to know what's safe to do on the Internet and when? We can set up your computers and network to block harmful sites for kids and what to look for when
+              entering sensitive information and more.
+            </div>
         </article>
 
         <article class="accordion">
@@ -179,11 +181,11 @@ Not sure whats wrong? Let us help you, we will find out what is wrong with your 
           <div class="accordion-body">
             <div class="accordion-content">
               Want an address on the Internet or already have one but need a website? We can get you your own address on the Internet and design a website just for you.
-<br>
+              <br>
               We offer a variety of hosting solutions starting at $3/month for a basic hosted website. Have your own servers or want to use somebody else's?, websites hosted on your servers, set up and design starting at $95
-<br>
+              <br>
               All packages include a domain name with private domain registration FREE! and come with a 30 day money back guarantee!
-              Click here or Contact us for more information today! 480.389.4298          </div>
+              Click here or Contact us for more information today! 480.389.4298 </div>
         </article>
 
       </section>
@@ -231,6 +233,33 @@ Not sure whats wrong? Let us help you, we will find out what is wrong with your 
   <script type="text/javascript" src="./node_modules/bulma-extensions/bulma-accordion/dist/js/bulma-accordion.min.js"></script>
   <script type="text/javascript">
     var accordions = bulmaAccordion.attach(); // accordions now contains an array of all Accordion instances
+  </script>
+  <script type="text/javascript">
+   document.addEventListener('DOMContentLoaded', () => {
+
+     // Get all "navbar-burger" elements
+     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+     // Check if there are any navbar burgers
+     if ($navbarBurgers.length > 0) {
+
+       // Add a click event on each of them
+       $navbarBurgers.forEach(el => {
+         el.addEventListener('click', () => {
+
+           // Get the target from the "data-target" attribute
+           const target = el.dataset.target;
+           const $target = document.getElementById(target);
+
+           // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+           el.classList.toggle('is-active');
+           $target.classList.toggle('is-active');
+
+         });
+       });
+     }
+
+   });
   </script>
   <script type="text/javascript" src="lib/main.js"></script>
 
