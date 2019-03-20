@@ -37,6 +37,8 @@ $navbar-item-img-max-height: 4rem;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
 /*
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
@@ -59,3 +61,6 @@ $primary-invert: $pink-invert;
 */
 
 @import "../node_modules/bulma/bulma";
+
+//Import bulma accordion extension for services page
+@import "../node_modules/bulma-extensions/bulma-accordion/src/sass/index";

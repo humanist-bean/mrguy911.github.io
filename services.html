@@ -56,30 +56,137 @@
 
   <div style="margin-top:75px"></div>
 
-  <!-- SHOWCASE -->
+  <!-- Main Content -->
   <section class="section">
     <h1 class="title is-1 has-text-centered">Services</h1>
     <div class="container">
-      <p class="subtitle">
-        - Custom Built Computers
-        <br>
-        - Refurbished Computers
-        <br>
-        - Networking
-        <br>
-        - Custom Built Computers
-        <br>
-        - Refurbished Computers
-        <br>
-        - Networking
-        <br>
-        - Custom Built Computers
-        <br>
-        - Refurbished Computers
-        <br>
-        - Networking
-        <br>
-      </p>
+
+      <!-- Service Accordions with Descriptions -->
+      <section class="accordions">
+        <article class="accordion is-active">
+          <div class="accordion-header toggle">
+            <p>
+              Custom Built Computers
+            </p>
+            <p style="font-size:10px">
+              Read More &darr;
+            </p>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              Tell us what you need it to do and we will build you a customized computer designed just for you. Whether its just a basic computer for email or a fully loaded state of the art gaming computer we do it all.
+<br>
+Every computer we build comes with a standard 1 year warranty. Some systems have components that are covered for as long as you own the computer system.
+<br>
+All computers come with either the original OS CD/DVD OR a customized restore disk.
+            </div>
+          </div>
+        </article>
+
+        <article class="accordion">
+          <div class="accordion-header toggle">
+            <p>
+              Upgrades
+            </p>
+            <p style="font-size:10px">
+              Read More &darr;
+            </p>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              We offer many upgrade options for both computers and printers. <br>
+
+Computers:<br>
+If you have your computer just the way you want it but you need it to be faster but don't want the hassle of setting up a new computer just the way you like it or just don't have the money or just want to add some features like cd/dvd burning or make it wireless, an upgrade is the route for you. Upgrades can speed up a computer  and extend it useful life to you for years to come
+<br>
+Printers:<br>
+If you print a lot of documents, the printer takes a long time to print or you print a lot of graphics, upgrading the printer (not replacing it) can speed up printing speed.
+            </div>
+          </div>
+        </article>
+
+        <article class="accordion">
+          <div class="accordion-header toggle">
+            <p>
+              Security
+            </p>
+            <p style="font-size:10px">
+              Read More &darr;
+            </p>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              Have a network? On the Internet? Then you need to secure your computer from the threats on the Internet. We can secure your computer from theft,  viruses, on lookers and more using both software and hardware solutions.
+            </div>
+          </div>
+        </article>
+
+        <article class="accordion">
+          <div class="accordion-header toggle">
+            <p>
+              Virus Removal
+            </p>
+            <p style="font-size:10px">
+              Read More &darr;
+            </p>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              No matter how many viruses its one flat rate:$135, includes antivirus software.
+            </div>
+          </div>
+        </article>
+
+        <article class="accordion">
+          <div class="accordion-header toggle">
+            <p>
+              Diagnostics
+            </p>
+            <p style="font-size:10px">
+              Read More &darr;
+            </p>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+Not sure whats wrong? Let us help you, we will find out what is wrong with your computer and let you know how to fix it, or if you want us to fix it, give you a quote for our services.            </div>
+          </div>
+        </article>
+
+        <article class="accordion">
+          <div class="accordion-header toggle">
+            <p>
+              Safety
+            </p>
+            <p style="font-size:10px">
+              Read More &darr;
+            </p>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              Need to protect children from the harmful parts of the Internet or do you just need to know what's safe to do on the Internet and when? We can set up your computers and network to block harmful sites for kids and what to look for when entering sensitive information and more.
+          </div>
+        </article>
+
+        <article class="accordion">
+          <div class="accordion-header toggle">
+            <p>
+              Website setup, design and hosting
+            </p>
+            <p style="font-size:10px">
+              Read More &darr;
+            </p>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-content">
+              Want an address on the Internet or already have one but need a website? We can get you your own address on the Internet and design a website just for you.
+<br>
+              We offer a variety of hosting solutions starting at $3/month for a basic hosted website. Have your own servers or want to use somebody else's?, websites hosted on your servers, set up and design starting at $95
+<br>
+              All packages include a domain name with private domain registration FREE! and come with a 30 day money back guarantee!
+              Click here or Contact us for more information today! 480.389.4298          </div>
+        </article>
+
+      </section>
     </div>
   </section>
 
@@ -118,7 +225,16 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="./node_modules/bulma-extensions/bulma-accordion/dist/js/bulma-accordion.min.js"></script>
+  <script type="text/javascript">
+    var accordions = bulmaAccordion.attach(); // accordions now contains an array of all Accordion instances
+  </script>
   <script type="text/javascript" src="lib/main.js"></script>
+
+
 </body>
 
 </html>
